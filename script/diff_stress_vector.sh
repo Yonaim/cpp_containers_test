@@ -1,3 +1,3 @@
 #!/bin/bash
 source ./diff_test_common.sh
-run_diff_test unit utils "$@"
+run_diff_test stress_vector "$@"

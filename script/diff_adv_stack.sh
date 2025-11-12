@@ -1,3 +1,3 @@
 #!/bin/bash
 source ./diff_test_common.sh
-run_diff_test stress stack "$@"
+run_diff_test adv_stack "$@"

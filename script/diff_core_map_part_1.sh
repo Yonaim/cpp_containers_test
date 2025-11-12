@@ -1,3 +1,3 @@
 #!/bin/bash
 source ./diff_test_common.sh
-run_diff_test stress map "$@"
+run_diff_test core_map_part_1 "$@"
