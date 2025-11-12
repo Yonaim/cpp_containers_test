@@ -25,16 +25,6 @@ namespace ft = std;
     // Use custom ft headers
     // -----------------------------
     // TODO: include your implemented header file
-    #include "enable_if.h"
-    #include "equal.h"
-    #include "is_integral.h"
-    #include "iterator_traits.h"
-    #include "lexicographical_compare.h"
-    #include "map.h"
-    #include "pair.h"
-    #include "reverse_iterator.h"
-    #include "stack.h"
-    #include "vector.h"
 #endif
 
 #endif // TEST_NAMESPACE_H

@@ -5,8 +5,7 @@ NAME          := containers
 
 NAMESPACE      ?= ft
 CXXSTD         := c++98
-CONTAINERS_PATH= ../include/ft
-
+CONTAINERS_PATH= # TODO: include your implemented containers path
 ifeq ($(NAMESPACE),std)
   NAMESPACE_FLAG := -DSTD_MODE=1
 else
