@@ -1,11 +1,6 @@
 #include "test_config.h"
+#include "test_namespace.h"
 #include "test_print.h"
-
-#ifdef STD_MODE
-    #include <utility>
-#else
-    // TODO: include your implemented header file
-#endif
 
 // ===========================================================
 //  Custom Struct: SomeType1
@@ -70,7 +65,7 @@ static void member_type_check(P &parm)
     std::cout << "second: " << second << '\n';
 }
 
-void test_pair()
+void test_utils_pair()
 {
     FILE_BANNER();
 

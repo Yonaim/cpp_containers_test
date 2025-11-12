@@ -1,15 +1,9 @@
-#include <vector>
 #include "test_config.h"
+#include "test_namespace.h"
 #include "test_print.h"
 #include "type_name_string.h"
 
-#ifdef STD_MODE
-    #include <iterator>
-#else
-    // TODO: include your implemented header file
-#endif
-
-void test_iterator_traits()
+void test_utils_iterator_traits()
 {
     FILE_BANNER();
 

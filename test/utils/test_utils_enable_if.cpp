@@ -7,13 +7,8 @@ Substitution Failure Is Not An Error (SFINAE)
 // C++98 버전에서는 없었다. Boost 팀이 처음 구현했다가 이후 표준에 포함됨.
 
 #include "test_config.h"
+#include "test_namespace.h"
 #include "test_print.h"
-
-#ifdef STD_MODE
-    #include <type_traits>
-#else
-// TODO: include your implemented header file
-#endif
 
 // =========================== use in Return Type ==============================
 
@@ -57,7 +52,7 @@ void printTypeParam(T val, typename ft::enable_if<ft::is_integral<T>::value, voi
 
 // =============================================================================
 
-void test_enable_if()
+void test_utils_enable_if()
 {
     FILE_BANNER();
 

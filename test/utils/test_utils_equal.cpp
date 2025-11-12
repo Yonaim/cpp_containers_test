@@ -1,19 +1,13 @@
-#include <vector>
 #include "test_config.h"
+#include "test_namespace.h"
 #include "test_print.h"
-
-#ifdef STD_MODE
-    #include <algorithm>
-#else
-    // TODO: include your implemented header file
-#endif
 
 // named requirements의 일종인 'BinaryPredicate'를 만족해야함
 // https://en.cppreference.com/w/cpp/named_req/BinaryPredicate.html
 bool pred_equal(int a, int b) { return a == b; }
 bool pred_even(int a, int b) { return (a % 2) == (b % 2); }
 
-void test_equal()
+void test_utils_equal()
 {
     FILE_BANNER();
 

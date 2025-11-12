@@ -1,19 +1,13 @@
-#include <vector>
 #include "test_config.h"
+#include "test_namespace.h"
 #include "test_print.h"
-
-#ifdef STD_MODE
-    #include <algorithm>
-#else
-    // TODO: include your implemented header file
-#endif
 
 // Compare 함수
 // named requirements의 일종인 'Compare'를 만족해야 함
 // https://en.cppreference.com/w/cpp/named_req/Compare.html
 bool comp_custom(int a, int b) { return (a + 1 == b); }
 
-void test_lexicographical_compare()
+void test_utils_lexicographical_compare()
 {
     FILE_BANNER();
 

@@ -1,13 +1,8 @@
 #include "test_config.h"
+#include "test_namespace.h"
 #include "test_print.h"
 
-#ifdef STD_MODE
-    #include <type_traits>
-#else
-    // TODO: include your implemented header file
-#endif
-
-void test_is_integral()
+void test_utils_is_integral()
 {
     FILE_BANNER();
 
